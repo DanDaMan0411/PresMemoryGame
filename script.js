@@ -45,8 +45,8 @@ boxesTurned = [null, null];
 function resetBoxes(){
 	firstImg = document.getElementById(boxesTurned[0]);
 	secondImg = document.getElementById(boxesTurned[1]);	
-	firstImg.src = "question.png";
-	secondImg.src = "question.png";
+	firstImg.src = "public/img/question.png";
+	secondImg.src = "public/img/question.png";
 	turnNumber = 0;
 	candidatesTurned = [null, null];
 	boxesTurned = [null, null];
@@ -117,7 +117,7 @@ function resetGame(){
 	for (i = 0; i < boxList.length; i++){
 		var boxImg = document.getElementById(boxList[i]);
 		boxImg.setAttribute("style", "visibility: visible;")
-		boxImg.setAttribute("src", "question.png")
+		boxImg.setAttribute("src", "public/img/question.png")
 		
 	}
 	
@@ -148,7 +148,7 @@ function boxClick(clickedId){
 		if (turnNumber < 3){
 			//Switches the question mark for the presidential candidate
 			var boxImg = document.getElementById(clickedId);
-			boxImg.src = candidate + ".jpeg";
+			boxImg.src = "public/img/" + candidate + ".jpeg";
 			if (turnNumber === 2){	
 			
 				//Checks to see if the two cards are the same
