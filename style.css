@@ -1,0 +1,85 @@
+@font-face{
+	font-family: gotham;
+	src: url(gotham.ttf);
+}
+
+@font-face{
+	font-family: gothamBold;
+	src: url(gothambold.ttf);
+}
+
+body{
+	background-color: #F0F0F0;
+}
+
+.box{
+	width: 25%;
+	height: 25%;
+	float: left;
+}
+
+#gameContainer{
+	background-color: white;
+	outline: 1px solid black;
+	margin: 0px auto;
+	height: 70%;
+	max-height: 700px;
+	width: 90%;
+	max-width: 700px;
+}
+
+#title{
+	font-family: gothamBold;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 3em;
+	color: #E0162B;
+}
+
+.questionMark{
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+}
+
+#winScreen{
+	visibility: hidden;
+}
+
+#winText{
+	font-family: gotham;
+	margin-top: 100px;
+	text-align: center;
+	color: #E0162B
+}
+
+#playAgainBtn{
+	background: #0052A5;
+	padding-top: 5px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-size: 250%;
+	position: absolute;
+	font-family: gotham;
+	top: 50%;
+	left: 35%;
+	width: 30%;
+	height: 8%;
+}
+
+#playAgainBtn:hover{
+	background: #3cb0fd;
+}
+
+#timerBox{
+color: #0052A5;
+	display: block;
+	font-family: gotham;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20px;
+	
+}
